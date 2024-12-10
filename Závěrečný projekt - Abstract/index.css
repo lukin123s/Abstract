@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background: #ecf0f1;
+}
+
+@font-face{
+    font-family: Abstract;
+    src: url("Font/Darbly\ Elegantcy.otf") ;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    font-family: Abstract;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.9);
+    z-index: 1000;
+}
+
+header h2{
+    font-size: 40px;
+    margin: 20px;
+    color: white;
+    transition: scale 0.25s linear;
+}
+
+header h2:hover{
+    scale: 1.05;
+}
+
+header nav{
+    margin: 20px;
+}
+
+header nav a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    transition: border-bottom 0.5 linear;
+}
+
+header nav a:hover{
+    border-bottom: white 2px solid;
+}
+
+main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background-image: url("Img/Ashes.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+main .container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 90vh;
+    z-index: 1;
+}
+
+main .container h1{
+    color: white;
+    font-size: 120px;
+    font-family: Abstract;
+    text-align: center;
+    z-index: 2;
+
+}
+
+main .container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 100px);
+    height: 70vh;
+    margin: 50px;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+}
+
+main .container2 img{
+    width: 500px;
+    height: 400px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+main .container2 .paragraph{
+    margin-left: 30px;
+}
+
+
+main .container3 .paragraph2 h2,
+main .container2 .paragraph h2{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+main .container3 .paragraph2 p,
+main .container2 .paragraph p{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+main .container3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 100px);
+    height: 70vh;
+    margin: 50px;
+    overflow: hidden;
+}
+
+main .container3 img{
+    width: 500px;
+    height: 400px;
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+main .container3 .paragraph2{
+    margin-right: 30px;
+}
+
+main .container4{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(Img/Play.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+
+}
+
+main .container4::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+main .container4 h2{
+    font-family: Abstract;
+    color: white;
+    font-size: 120px;
+    text-align: center;
+    z-index: 2;
+}
+
+main .container4 a{
+    z-index: 2;
+}
+
+main .container4 a button{
+    height: 80px;
+    width: 150px;
+    color: black;
+    font-size: 40px;
+    background-color: #ecf0f1;
+    border-radius: 10%;
+    transition: scale 0.5s linear;
+}
+
+main .container4 a button:hover{
+    scale: 1.05;
+}
+
+main .container5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 100px);
+    height: 70vh;
+    margin: 50px;
+    overflow: hidden;
+}
+
+main .container5 img{
+    width: 500px;
+    height: 400px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+main .container5 .paragraph{
+    margin-left: 30px;
+}
+
+main .container5 .paragraph h2{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+main .container5 .paragraph p{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.9);
+    z-index: 1000;
+}
+
+footer h2{
+    font-family: Abstract;
+    color: white;
+    font-size: 30px;
+    border-right: 2px solid white;
+    padding: 10px;
+}
+
+footer .text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+
+footer .text p{
+    font-size: 18px ;
+}

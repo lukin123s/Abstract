@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="canvas.css">
+    <title>Abstract art editor</title>
+</head>
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+
+        <form class="form">
+            <div class="controlPanel">
+                <div class="section">
+                    <label for="shapes">Nástroje</label>
+                    <select id="shapes">
+                        <option value="1">Kruh ○</option>
+                        <option value="2">Čtverec □</option>
+                        <option value="3">Obdélník ▭</option>
+                        <option value="4">Elipsa ⬯</option>
+                        <option value="5">Tužka ✎</option>
+                        <option value="6">Dadaismus ✎</option>
+                        <option value="7">Seifert ✎</option>
+                        <option value="8">Pollock Drip 🖌️</option>
+
+                    </select>
+                </div>
+                
+                <div class="section">
+                    <label for="color">Barvy</label>
+                    <select id="color">
+                        <option value="1">Černá</option>
+                        <option value="2">Bílá</option>
+                        <option value="4">Červená</option>
+                        <option value="5">Modrá</option>
+                        <option value="6">Zelená</option>
+                        <option value="7">Oranžová</option>
+                        <option value="8">Žlutá</option>
+                        <option value="3">Random</option>
+                    </select>
+                </div>
+                <div class="section">
+                    <label for="size">Velikosti</label>
+                    <select id="size">
+                        <option value="1">Výchozí </option>
+                        <option value="2">Maxi</option>
+                        <option value="3">Random </option>
+                    </select>
+                </div>
+                <div class="section">
+                    <label for="rotation">Rotace</label>
+                    <select id="rotation">
+                        <option value="1">Výchozí </option>
+                        <option value="2">Pravotočivá rotace</option>
+                        <option value="3">Levotočivá rotace</option>
+                    </select>
+                </div>
+                <div class="section">
+                    <label for="width">Šířka</label>
+                    <select id="width">
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+                    </select>
+                </div>
+                <div class="section">
+                    <label for="background">Pozadí</label>
+                    <select id="background">
+                        <option value="1">Bílá </option>
+                        <option value="2">Černá</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="buttons">                
+                <button type="button" id="saveCanvas">Uložit</button>   
+                <input class="submit" type="submit" value="Vymazat">
+                <a href="index.html">Home</a>
+            </div>
+            
+        </form>
+        
+        <div class="screen">
+            <canvas id="canvas"></canvas>
+        </div>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+<script src="canvas.js"></script>   
+</body>
+</html>
